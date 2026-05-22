@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahmat Hidayat — Developer Manager @ Holywings | Tech Enthusiast | Outdoor Explorer</title>
+  <meta name="description" content="Rahmat Hidayat is a Developer Manager at Holywings (HW Group), passionate about software architecture, leading developer teams, and outdoor exploration.">
+  <meta name="keywords" content="Rahmat Hidayat, Developer Manager, Holywings, HW Group, software architecture, tech leader, outdoor explorer">
+  <meta property="og:title" content="Rahmat Hidayat — Developer Manager @ Holywings">
+  <meta property="og:description" content="Developer Manager building tech products with real business impact. Tech enthusiast & outdoor explorer.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#F6F7F9">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- ============ CURSOR GLOW ============ -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-ring"></div>
+    <p class="preloader-text">Initializing System</p>
+    <div class="preloader-bar">
+      <div class="preloader-bar-fill" id="preloaderFill"></div>
+    </div>
+  </div>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" data-mobile-link>Home</a>
+    <a href="#about" data-mobile-link>About</a>
+    <a href="#capabilities" data-mobile-link>Expertise</a>
+    <a href="#projects" data-mobile-link>Portfolio</a>
+    <a href="#lifestyle" data-mobile-link>Lifestyle</a>
+    <a href="#contact" data-mobile-link>Connect</a>
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav" id="mainNav">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo" id="navLogo">
+        <div class="nav-logo-mark">RH</div>
+        <span class="nav-logo-text">RAHMAT.SYS</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#capabilities" class="nav-link">Expertise</a>
+        <a href="#projects" class="nav-link">Portfolio</a>
+        <a href="#lifestyle" class="nav-link">Lifestyle</a>
+      </div>
+
+      <a href="#contact" class="nav-cta" id="navCta">
+        <span>Connect</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero section" id="home">
+    <div class="hero-bg">
+      <img src="assets/hero-bg.png" alt="" width="1920" height="1080" fetchpriority="high">
+    </div>
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <div class="hero-meta">
+        <div class="telemetry-badge">
+          <span class="dot"></span>
+          <span>System Active</span>
+        </div>
+        <div class="telemetry-badge">
+          <span>HW Group — 2026</span>
+        </div>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line"><span class="line-inner">Rahmat</span></span>
+        <span class="line"><span class="line-inner"><span class="accent-word">Hidayat</span></span></span>
+        <span class="line"><span class="line-inner" style="font-size: 0.4em; font-weight: 500; letter-spacing: 0.02em; color: var(--gray-500); line-height: 2;">Developer Manager @ Holywings</span></span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Tech enthusiast &amp; outdoor explorer. Designing software architecture, leading developer teams, and ensuring every tech product delivers real business impact.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary" id="heroCta">
+          <span>View Portfolio</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#about" class="btn-secondary" id="heroSecondary">
+          <span>Know Me</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Telemetry sidebar -->
+    <div class="hero-telemetry" aria-label="Live metrics">
+      <div class="telemetry-item">
+        <div class="telemetry-label">Brands Led</div>
+        <div class="telemetry-value" data-counter="3">0</div>
+      </div>
+      <div class="telemetry-item">
+        <div class="telemetry-label">Systems Built</div>
+        <div class="telemetry-value" data-counter="15">0</div>
+      </div>
+      <div class="telemetry-item">
+        <div class="telemetry-label">Team Size</div>
+        <div class="telemetry-value"><span data-counter="20">0</span><span class="unit">DEV</span></div>
+      </div>
+      <div class="telemetry-item">
+        <div class="telemetry-label">Status</div>
+        <div class="telemetry-value" style="color: var(--signal-green); font-size: 1rem;">● ONLINE</div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <span class="hero-scroll-text">Scroll to Explore</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ STATUS BAR ============ -->
+  <div class="status-bar" aria-hidden="true">
+    <div class="status-bar-track">
+      <div class="status-bar-item"><span class="indicator"></span> Atlas Beach Fest — Operational</div>
+      <div class="status-bar-item"><span class="indicator"></span> Mangkokku Systems — Active</div>
+      <div class="status-bar-item"><span class="indicator"></span> Padel Club Platform — Live</div>
+      <div class="status-bar-item"><span class="indicator amber"></span> Next Adventure — Loading</div>
+      <div class="status-bar-item"><span class="indicator"></span> Architecture — Optimized</div>
+      <div class="status-bar-item"><span class="indicator"></span> Team Performance — 99.7%</div>
+      <div class="status-bar-item"><span class="indicator"></span> Running Distance — 42K+</div>
+      <div class="status-bar-item"><span class="indicator"></span> Mountains Conquered — Summit</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="status-bar-item"><span class="indicator"></span> Atlas Beach Fest — Operational</div>
+      <div class="status-bar-item"><span class="indicator"></span> Mangkokku Systems — Active</div>
+      <div class="status-bar-item"><span class="indicator"></span> Padel Club Platform — Live</div>
+      <div class="status-bar-item"><span class="indicator amber"></span> Next Adventure — Loading</div>
+      <div class="status-bar-item"><span class="indicator"></span> Architecture — Optimized</div>
+      <div class="status-bar-item"><span class="indicator"></span> Team Performance — 99.7%</div>
+      <div class="status-bar-item"><span class="indicator"></span> Running Distance — 42K+</div>
+      <div class="status-bar-item"><span class="indicator"></span> Mountains Conquered — Summit</div>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="about-image-wrapper">
+          <div class="about-avatar">
+            <span class="about-avatar-initials">RH</span>
+          </div>
+        </div>
+        <div class="about-floating-badge telemetry-badge" style="position:absolute; top:10%; right:-5%;">
+          <span class="dot"></span>
+          <span>Dev Manager</span>
+        </div>
+        <div class="about-floating-badge telemetry-badge" style="position:absolute; bottom:15%; left:-2%;">
+          <span>HW Group</span>
+        </div>
+      </div>
+
+      <div class="about-info">
+        <div class="about-label reveal">
+          <span class="about-label-line"></span>
+          <span class="text-caption">About Me</span>
+        </div>
+
+        <h2 class="heading-lg about-title reveal reveal-delay-1">
+          Code, Leadership &<br><span class="text-gradient">Exploration</span>
+        </h2>
+
+        <p class="text-body-lg about-text reveal reveal-delay-2">
+          Hello! I am a <strong>Developer Manager</strong> currently building my career at <strong>Holywings (HW Group)</strong>. I have a huge passion for designing software architecture, leading developer teams, and ensuring every tech product built delivers a real business impact.
+        </p>
+        <p class="text-body about-text reveal reveal-delay-3">
+          Outside the world of code and project management, I am someone who loves freedom and physical challenges. I believe that a balance between professional life and nature exploration is the key to continuous innovation.
+        </p>
+
+        <div class="about-stats reveal reveal-delay-4">
+          <div class="stat-item">
+            <div class="stat-number" data-counter="3">0</div>
+            <div class="stat-label">Brands</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-counter="15">0</div>
+            <div class="stat-label">Systems</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-counter="20">0</div>
+            <div class="stat-label">Dev Team</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAPABILITIES / EXPERTISE ============ -->
+  <section class="capabilities section" id="capabilities">
+    <div class="container">
+      <div class="capabilities-header">
+        <div class="about-label reveal">
+          <span class="about-label-line"></span>
+          <span class="text-caption">Core Expertise</span>
+        </div>
+        <h2 class="heading-lg reveal reveal-delay-1">
+          Engineered for <span class="text-gradient">Impact</span>
+        </h2>
+        <p class="text-body-lg reveal reveal-delay-2">
+          The core competencies powering every system and team I lead — from architecture to deployment.
+        </p>
+      </div>
+
+      <div class="capabilities-grid">
+        <!-- Card 1 -->
+        <div class="capability-card reveal">
+          <div class="capability-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <div class="capability-number">SYS.001</div>
+          <h3 class="capability-title">Software Architecture</h3>
+          <p class="capability-desc">Designing scalable, resilient system architectures that handle millions of transactions. From microservices to monoliths — right tool for the right job.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="capability-card reveal reveal-delay-1">
+          <div class="capability-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="capability-number">SYS.002</div>
+          <h3 class="capability-title">Team Leadership</h3>
+          <p class="capability-desc">Leading and mentoring developer teams to deliver high-quality products. Building culture, process, and velocity that compounds over time.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="capability-card reveal reveal-delay-2">
+          <div class="capability-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
+          </div>
+          <div class="capability-number">SYS.003</div>
+          <h3 class="capability-title">Product Engineering</h3>
+          <p class="capability-desc">Translating business requirements into technical solutions that deliver real value. Every feature built is measured against business impact.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="capability-card reveal reveal-delay-3">
+          <div class="capability-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>
+          </div>
+          <div class="capability-number">SYS.004</div>
+          <h3 class="capability-title">System Integration</h3>
+          <p class="capability-desc">Connecting disparate platforms into cohesive ecosystems. POS, CRM, booking systems, analytics — all wired into one operational dashboard.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="capability-card reveal reveal-delay-4">
+          <div class="capability-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5v3a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5Z"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/></svg>
+          </div>
+          <div class="capability-number">SYS.005</div>
+          <h3 class="capability-title">Digital Transformation</h3>
+          <p class="capability-desc">Driving F&B and entertainment businesses into the digital age — from manual operations to automated, data-driven decision making.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="capability-card reveal reveal-delay-5">
+          <div class="capability-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+          </div>
+          <div class="capability-number">SYS.006</div>
+          <h3 class="capability-title">Performance Analytics</h3>
+          <p class="capability-desc">Building data pipelines and dashboards that turn raw metrics into actionable business intelligence. If you can't measure it, you can't improve it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS / PORTFOLIO ============ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="projects-header">
+        <div>
+          <div class="about-label reveal">
+            <span class="about-label-line"></span>
+            <span class="text-caption">Portfolio & Experience</span>
+          </div>
+          <h2 class="heading-lg reveal reveal-delay-1">
+            Flagship <span class="text-gradient">Brands</span>
+          </h2>
+        </div>
+        <p class="text-body reveal reveal-delay-2" style="max-width: 440px;">
+          Leading development and system integration for flagship brands under the Holywings (HW Group) umbrella.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Atlas -->
+        <div class="project-card reveal" id="project1">
+          <div class="project-image">
+            <img src="assets/project-atlas.png" alt="Atlas Beach Fest digital ecosystem" width="800" height="500" loading="lazy">
+            <div class="project-image-overlay"></div>
+            <div class="project-image-tag">
+              <span class="telemetry-badge"><span class="dot"></span> Live</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Entertainment & Events</div>
+            <h3 class="project-title">Atlas Beach Fest & Club</h3>
+            <p class="project-desc">Development of the digital ecosystem and operational systems to support the biggest beach fest and club experience.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="project-tech-tag">Ecosystem</span>
+              <span class="project-tech-tag">Operations</span>
+              <span class="project-tech-tag">Events</span>
+            </div>
+            <div class="project-arrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Mangkokku -->
+        <div class="project-card reveal reveal-delay-1" id="project2">
+          <div class="project-image">
+            <img src="assets/project-mangkokku.png" alt="Mangkokku F&B technology platform" width="800" height="500" loading="lazy">
+            <div class="project-image-overlay"></div>
+            <div class="project-image-tag">
+              <span class="telemetry-badge"><span class="dot"></span> Active</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category">F&B Technology</div>
+            <h3 class="project-title">Mangkokku</h3>
+            <p class="project-desc">Optimizing technology solutions for F&B efficiency and customer experience — from ordering to analytics.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="project-tech-tag">F&B</span>
+              <span class="project-tech-tag">CX</span>
+              <span class="project-tech-tag">Analytics</span>
+            </div>
+            <div class="project-arrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Holywings Padel Club -->
+        <div class="project-card reveal reveal-delay-2" id="project3">
+          <div class="project-image">
+            <img src="assets/project-padel.png" alt="Holywings Padel Club management platform" width="800" height="500" loading="lazy">
+            <div class="project-image-overlay"></div>
+            <div class="project-image-tag">
+              <span class="telemetry-badge"><span class="dot"></span> Live</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Sport Entertainment</div>
+            <h3 class="project-title">Holywings Padel Club</h3>
+            <p class="project-desc">Building a management and sport entertainment service platform for the padel ecosystem — booking, tournaments, and community.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="project-tech-tag">Platform</span>
+              <span class="project-tech-tag">Booking</span>
+              <span class="project-tech-tag">Sports</span>
+            </div>
+            <div class="project-arrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIFESTYLE / HOBBIES ============ -->
+  <section class="philosophy section" id="lifestyle">
+    <div class="container philosophy-grid">
+      <div>
+        <div class="philosophy-label about-label reveal">
+          <span class="about-label-line"></span>
+          <span class="text-caption" style="color: var(--gray-300);">Hobbies & Interests</span>
+        </div>
+
+        <h2 class="heading-lg philosophy-title reveal reveal-delay-1">
+          Beyond the Code,<br>Into the Wild
+        </h2>
+
+        <p class="text-body-lg philosophy-text reveal reveal-delay-2">
+          For me, being outdoors is the best way to recharge my energy. I believe that a balance between professional life and nature exploration is the key to continuous innovation.
+        </p>
+
+        <blockquote class="philosophy-quote reveal reveal-delay-3" style="margin-top: var(--space-2xl);">
+          "Freedom and physical challenges fuel the creativity that drives my code."
+        </blockquote>
+      </div>
+
+      <div class="philosophy-principles">
+        <div class="principle-item reveal">
+          <span class="principle-number">🏃‍♂️</span>
+          <div class="principle-content">
+            <h4>Sports & Running</h4>
+            <p>Actively maintaining physical fitness and enjoying the challenge of long-distance running — including trail running across challenging terrain.</p>
+          </div>
+        </div>
+
+        <div class="principle-item reveal reveal-delay-1">
+          <span class="principle-number">⛰️</span>
+          <div class="principle-content">
+            <h4>Mountain Hiking</h4>
+            <p>Exploring the wilderness, training mental endurance, and enjoying the breathtaking beauty from the heights of Indonesia's mountain ranges.</p>
+          </div>
+        </div>
+
+        <div class="principle-item reveal reveal-delay-2">
+          <span class="principle-number">🏍️</span>
+          <div class="principle-content">
+            <h4>Motorcycle Touring</h4>
+            <p>Exploring new routes and enjoying long journeys with the community. The open road is the ultimate reset button for the mind.</p>
+          </div>
+        </div>
+
+        <div class="principle-item reveal reveal-delay-3">
+          <span class="principle-number">💡</span>
+          <div class="principle-content">
+            <h4>Continuous Innovation</h4>
+            <p>Every outdoor experience feeds back into my work — building resilience, sharpening focus, and inspiring creative solutions to technical challenges.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <div class="about-label reveal">
+          <span class="about-label-line"></span>
+          <span class="text-caption">Let's Connect</span>
+        </div>
+
+        <h2 class="heading-lg contact-title reveal reveal-delay-1">
+          Got a Project?<br><span class="text-gradient">Let's Talk</span>
+        </h2>
+
+        <p class="text-body-lg contact-text reveal reveal-delay-2">
+          I'm always open to discussions about technology, collaboration opportunities, or simply sharing experiences about running and touring. Let's connect!
+        </p>
+
+        <div class="contact-channels">
+          <a href="mailto:rahmathidayatik1010@gmail.com" class="contact-channel reveal reveal-delay-3" id="contactEmail">
+            <div class="contact-channel-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div class="contact-channel-info">
+              <div class="contact-channel-label">Email</div>
+              <div class="contact-channel-value">rahmathidayatik1010@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="tel:08123456789" class="contact-channel reveal reveal-delay-3" id="contactPhone">
+            <div class="contact-channel-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-channel-info">
+              <div class="contact-channel-label">Phone / WhatsApp</div>
+              <div class="contact-channel-value">08123456789</div>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/rahmat-hidayat-407969201" target="_blank" rel="noopener noreferrer" class="contact-channel reveal reveal-delay-4" id="contactLinkedin">
+            <div class="contact-channel-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-channel-info">
+              <div class="contact-channel-label">LinkedIn</div>
+              <div class="contact-channel-value">Rahmat Hidayat</div>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/rahmat.hdr" target="_blank" rel="noopener noreferrer" class="contact-channel reveal reveal-delay-5" id="contactInstagram">
+            <div class="contact-channel-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </div>
+            <div class="contact-channel-info">
+              <div class="contact-channel-label">Instagram</div>
+              <div class="contact-channel-value">@rahmat.hdr</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/rahmathidayatik1010@gmail.com" method="POST">
+        <!-- FormSubmit.co config — no signup needed, works on GitHub Pages -->
+        <input type="hidden" name="_subject" value="New message from Personal Branding Website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
+        <!-- After submit, redirect back to site with success hash -->
+        <input type="hidden" name="_next" id="formRedirect">
+
+        <div style="text-align:center; margin-bottom: var(--space-xl);">
+          <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--gray-900); margin-bottom: var(--space-sm);">✉️ Send Me a Message</h3>
+          <p style="font-size: 0.9rem; color: var(--gray-500);">Have questions, project ideas, or partnership offers?</p>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="formName">Your Name</label>
+          <input type="text" class="form-input" id="formName" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="formEmail">Your Email</label>
+          <input type="email" class="form-input" id="formEmail" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="formSubject">Subject</label>
+          <input type="text" class="form-input" id="formSubject" name="subject" placeholder="What's the topic?">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="formMessage">Message</label>
+          <textarea class="form-textarea" id="formMessage" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="formSubmit">
+          <span>Send Message</span>
+        </button>
+        <div style="text-align:center; margin-top: var(--space-md);">
+          <a href="mailto:rahmathidayatik1010@gmail.com?subject=Message%20from%20Personal%20Branding%20Website" style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.05em; color: var(--accent-primary); text-decoration: underline; text-underline-offset: 3px;">
+            Or send directly via email →
+          </a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">RAHMAT.SYS</div>
+          <p class="footer-brand-desc">
+            Developer Manager at Holywings (HW Group). Tech enthusiast and outdoor explorer, building tech products that deliver real business impact.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <div class="footer-col-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#capabilities">Expertise</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#lifestyle">Lifestyle</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Connect</div>
+          <div class="footer-col-links">
+            <a href="mailto:rahmathidayatik1010@gmail.com">Email</a>
+            <a href="tel:08123456789">WhatsApp</a>
+            <a href="https://www.linkedin.com/in/rahmat-hidayat-407969201" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://instagram.com/rahmat.hdr" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Brands</div>
+          <div class="footer-col-links">
+            <a href="#projects">Atlas</a>
+            <a href="#projects">Mangkokku</a>
+            <a href="#projects">Padel Club</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copyright">© 2026 Rahmat Hidayat. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/rahmat-hidayat-407969201" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://instagram.com/rahmat.hdr" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="mailto:rahmathidayatik1010@gmail.com" class="footer-social-link" aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
