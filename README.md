@@ -85,3 +85,4 @@ No build tools. No npm. No frameworks. Just open `index.html`.
 ## 📝 License
 
 © 2026 Rahmat Hidayat. All rights reserved.
+# profile
